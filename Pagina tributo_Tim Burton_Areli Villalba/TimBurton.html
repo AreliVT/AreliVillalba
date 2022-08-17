@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Uchen&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Taviraj&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+
+<link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+
+    <title>Pagina Tim Burton</title>
+    <style>
+        div{
+            display: flex;
+        }
+    body{
+        margin: 0%;
+        background: #afb1b7;
+    }
+    h1{
+        color: #332735;
+        font-size: 50px;
+        margin: 0%;
+        font-family: 'Uchen', serif;
+    } 
+    p {
+        color: #42233e;
+        font-size: 20px;
+        margin: 1%;
+        font-family: 'Mukta', sans-serif
+    } 
+    h2 {
+        color:#42233e;
+        font-size: 30px;
+        margin: 0%;
+        font-family: 'Uchen', serif;
+    }  
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav{
+        font-size: 20px;
+        text-align: center;
+        font-family: 'Uchen', serif; 
+        background: #0d1218;             
+    }
+    #navigation-bar .menu__hamburger-icon{
+        display: none;
+        float: right;
+    }
+    @media screen and (max-width: 600px){
+        #navigation-bar .menu__hamburger-icon{
+            display: block;
+            float: right;
+        }    
+    }
+    @media screen and (max-width:600px) {
+        #navigation-bar li:not(:first-child) :not(menu__hamburger-icon) {
+            display: none;
+        }  
+    }      
+    #navigation-bar .menu__hamburger-icon{
+        display: block;
+        float: right;
+    }
+    #navigation-bar li{
+        display: inline-block;
+        justify-content: center;
+    }
+    #navigation-bar li a{
+        display: block;
+        color: #afb1b7;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    #navigation-bar ul{
+        margin: 0;
+        padding: 0;
+        border: 1px;
+    }
+    #navigation-bar li a:hover:not(.active){
+        color: #8c547c;
+    }
+    #navigation-bar li a.active{
+        color: #8c547c;
+        background: #0d1218;
+    }
+    @media screen and (max-width:600px){
+        #navigation-bar li:not(first-child){
+            display: none;
+        }        
+    }
+    #navigation-bar.responsive{
+        position: relative;
+    }
+    #navigation-bar.responsive .menu__hamburger-icon{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    #navigation-bar.responsive .menu__hamburger-icon a {
+        color: #8c547c;
+    }
+    #navigation-bar.responsive li {
+        float: none;
+        display: block !important; 
+    }
+    #navigation-bar.responsive li a{
+        text-align: left;
+    }            
+    section{
+        display: flex;
+        flex: 6;
+        padding-left: 4%;
+        flex-direction: column;        
+    }
+    .img{
+        align-self: center;
+        padding-top: 1%;
+    }
+    aside{
+        display: flex;
+        flex: 2;
+        flex-direction: column;
+        align-items: center;
+        background: #7693a5;
+        
+    }
+    #links-sidebar{
+        flex: 2;
+        padding: 10px;
+    }
+    #links-sidebar ul{
+        padding: 0 0 0 10px;
+    }
+    #links-siderbar li {
+        list-style: none;
+    }
+    .links{
+        font-size: 20px;
+        margin: 4%;
+        font-family: 'Uchen', serif;    
+    }
+    @media screen and (max-width: 600px) {
+        #links-sidebar{
+            display: none;
+        }
+        
+    }
+    #main-content {
+        flex: 6;
+        padding: 10px 20% 10px 10px;
+    }
+    @media screen and (max-width: 600px) {
+        #main-content{
+            padding-right: 10px;
+        }        
+    }
+    footer{ 
+        padding: 0 20px 300px;
+        margin-top: auto;
+        display: flex;
+        background: #607e98; 
+        text-align: center;       
+    }
+    .footer__section{
+        flex:1;
+        display: flex;
+        flex-direction: column;
+        font-size:20px;
+			height:64px;
+			margin-top:16px;
+    }
+    .social__networks{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .social__network{
+        display: flex;
+        align-items: center;
+    }
+    .social__icon{
+        font-size: 32px;
+    }   
+    .social__icon-handler{
+        margin-left: 10px;
+    }
+    .footer__more-sites ul {
+        padding: 0 0 0 10px;
+    }
+    .footer__more-sites li {
+        list-style: none;
+    }
+
+    @media screen and (max-width: 600px) {
+        #footer {
+            flex-direction: column;
+        }        
+    }
+    .footer__section{
+        border-bottom: 1px;
+        padding: 10px;
+    }
+    a{
+        text-decoration: none;
+        color: #afb1b7;
+    }
+    a:hover{
+        text-decoration: underline;
+        text-underline-offset: 3px;
+    }
+    input[type=email], textarea{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 3px solid #ccc;
+        transition: 0.5s;
+        outline: none;
+    }
+    input[type=email]:focus, textarea:focus {
+        border: 3px solid #555;
+    }
+    input[type=submit] {
+        background: #3a3c54;
+        border: none;
+        color: #798ea9;
+        padding: 16px 32px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+
+    }
+    </style>
+    <script>
+        function myFunction() {
+            const navigationBar = document.getElementById("navigation-bar");
+            if (navigationBar.className === "navigation-bar") {
+                navigationBar.className += " responsive";
+            } else {
+                navigationBar.className = "navigation-bar";
+            }
+        }
+    </script>
+</head>
+<body>
+
+<header id="#header">
+    <h1>Tim Burton</h1>
+    <h2>1958 - Presente</h2>
+</header>  
+
+<nav id="navigation-bar" class="navigation-bar">
+  <ul>
+    <li><a class="active" href="TimBurton.html">Inicio</a></li>
+    <li><a href="https://www.biografiasyvidas.com/biografia/b/burton_tim.htm">Biografia</a></li>
+    <li><a href="https://www.sensacine.com/actores/actor-6494/filmografia/">Peliculas</a></li>
+    <li><a href="https://miraenelreverso.wordpress.com/premios/">Premios</a></li>
+    <li><a href="http://www.creaerte.com/live/la-vision-unica-del-mundo-tim-burton/">Estilo caracteristico</a></li>
+    <li class="menu__hamburger-icon">
+        <a  href="javascript:void(0);" onclick="myFunction()">
+            <i class="lni lni-menu"></i>
+        </a>
+    </li>
+  </ul>
+</nav>  
+
+<div id="#main-content-container">
+
+    <section id="#main-content">
+        
+        <img class="img" src="Tim Burton.jpg" alt="Tim Burton" width="60%" height="50%">
+
+        <p><h2>Un poco de Tim Burton</h2></p>
+        <p>Nació el 25 de agosto de 1958 en Burbank, California (Estados Unidos)
+            Director, guionista y productor estadounidense, Timothy William Burton es uno de los autores más originales del Hollywood actual, creando un universo propio marcado por la mitomanía, el reciclaje cultural y una imaginación desbordante de notable impronta visual con personales historias, muchas de ellas con rasgos de humor negro y significadas por el protagonismo principal de caracteres inadaptados, antihéroes de fácil identificación con su autor.
+        <br>
+        Desde su época de estudiante en su ciudad natal mostró un gran talento para el dibujo, lo que le llevó a matricularse en el California Institute of Arts, donde completó su formación artística. Presentó sus trabajos en los estudios que fundara Walt Disney, que serían su lugar de creación durante años. Formó parte del equipo de animadores de la compañía y participó, de ese modo, en la realización de largometrajes como Tod y Toby y Taron y el caldero mágico.
+
+        Aprovechando su buena relación con los ejecutivos de la productora, logró realizar con su financiación dos cortometrajes, Vincent (1982) y Frankenweenie (1984), que mostraron ya las características fundamentales de su cine: estética expresionista, nostalgia por los personajes del cine clásico de terror y movimientos de cámara muy similares a los empleados en el dibujo animado.</p>
+        <p><h2>Peliculas</h2></p>
+        <p>Entre sus películas se encuentran Batman, Beetlejuice, Edward Scissorhands y Charlie y la fábrica de chocolate. Corpse Bride (2005) y Frankenweenie (2012) fueron candidatas al Óscar a la mejor película de animación. A menudo trabaja con el actor Johnny Depp, el músico Danny Elfman y su expareja Helena Bonham Carter. Otros actores como Michael Gough, Michael Keaton, Christopher Lee, Danny DeVito y Deep Roy han participado en al menos cuatro peliculas de Burton.</p>
+        
+        <p><h2>Estilo</h2></p>
+        <p>Tim Burton es uno de esos directores que tiene un estilo visual fácilmente identificable. Casi todas sus películas se deleitan con imágenes góticas. Desde los propios personajes, pasando por la utilería, hasta las casas y ciudades donde se desarrollan las historias están esculpidos de una manera exagerada, casi caricaturesca para enfatizar esos rasgos “góticos”.</p>
+        <br>
+        <img src="Edward.jpg" alt="Dibujo de Tim Burton" width="20%" height="40%">
+
+    </section>
+       
+</div>
+
+<footer id="#footer">
+    <div class="footer__contact-form footer__section">
+    <h2>Mis Redes</h2>
+
+    <div class="social__networks">
+        <div class="social__network">
+            <span class="social__icon-container"><i class="lni lni-github-original social__icon"></i></span>
+            <span class="social__icon-handler"><a href="https://github.com/AreliVT"> @AreliVT</a></span>
+        </div>
+        
+        </div>
+    </div>
+
+    <div class="footer__contact-form footer__section">
+    <h2>Contacto</h2>
+    <div>
+    <form>
+        <label for="contactEmail">Correo electronico</label>
+        <input id="contactEmail" required type="email" placeholder="Ingresa tu correo electronico">
+
+        <label for="contactMessage">Mensaje</label>
+        <textarea id="submit" required rows="4" cols="50"></textarea>
+
+        <input type="submit" value="Enviar">
+    </form>
+</div>
+</div>
+
+    <div class="footer__more-sites footer__section">
+    <h2>Otros sitios</h2>
+    <ul>
+        <li class="links"><a href="index1.html" target="_blank"> Ir a Talasofobia (1) </a></li>
+        <li class="links"><a href="index2.html" target="_blank"> Ir All the young dudes (2) </a></li>
+        <li class="links"><a href="index3.html" target="_blank"> Ir a pagina 3 </a></li>
+            </ul>
+    </div>    
+    
+</footer>
+
+
+</body>        
+</html> 
+
+
+
